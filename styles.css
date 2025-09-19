@@ -1,0 +1,529 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fdf6f6; /* soft background like screenshot */
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #f5b5b5; /* pink border like screenshot */
+  background-color: #fff0f0;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.college-logo {
+  height: 40px;
+}
+
+.site-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav ul li a:hover {
+  color: #f06292; /* hover pink */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero-image {
+  flex: 0 0 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px dotted #f06292; /* pink dotted border */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #f5b5b5;
+  background-color: #fff0f0;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* About Section Styles */
+.about {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(27, 20, 25, 0.9);
+  border-radius: 12px;
+  border: 1px solid #0e0a0e;
+  box-shadow: 0 0 20px rgba(22, 18, 21, 0.5);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1 1 600px;
+  color: #c6c6c6;
+  line-height: 1.7;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 2px solid #d9e3e7;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #999;
+  padding-bottom: 0.5rem;
+}
+
+.about h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.about h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #d1d8da;
+}
+
+.about p::selection {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #fbbf24;
+}
+
+/* Education Page Styles - Light Background & Black Accents */
+.education-page {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background-color: #fdfdfd; /* light page background */
+}
+
+/* Page Title */
+.education-page h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #000; /* black title */
+    text-shadow: 0 0 4px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+/* Each education block */
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff; /* light card background */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.education-container:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Text in each block */
+.education-text {
+    flex: 1 1 300px;
+    padding-right: 20px;
+    color: #111;
+}
+
+.education-text h3 {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    color: #000; /* black headings */
+    text-shadow: 0 0 3px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.education-text p {
+    font-size: 1.15rem;
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Image in each block */
+.education-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.education-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    border: 2px solid #999; /* soft gray border instead of black */
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.education-photo:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12); /* lighter shadow on hover */
+}
+
+
+/* Skills Section - Soft Glow */
+.skills-page {
+    background: #fdf6f0; /* light warm background */
+    padding: 40px 20px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Soft Glow Titles */
+.skills-page h2,
+.skills-page h3 {
+    text-align: center;
+    color: #000; /* black titles */
+    text-shadow: 0 0 4px rgba(0,0,0,0.2); /* subtle soft glow */
+    margin-bottom: 20px;
+}
+
+/* Skills Container */
+.skills-page .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Skill Cards */
+.skills-page .skill-category {
+    background: #ffffff; /* clean card */
+    border-radius: 20px;
+    padding: 25px;
+    width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #999; /* soft gray border */
+    box-shadow: 0 0 6px rgba(0,0,0,0.1); /* subtle glow */
+}
+
+.skills-page .skill-category:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 12px rgba(0,0,0,0.15); /* slightly stronger on hover */
+}
+
+/* Skill List Items */
+.skills-page .skill-list li {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: #000; /* black text */
+    text-shadow: 0 0 2px rgba(0,0,0,0.1); /* very subtle glow */
+    border-bottom: 1px dashed rgba(0,0,0,0.05);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.skills-page .skill-list li:hover {
+    color: #555; /* dark gray on hover */
+    text-shadow: 0 0 4px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-page .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-page .skill-category {
+        width: 90%;
+    }
+}
+
+
+/* Projects Section - Modern Simple Design */
+.projects-page {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.projects-page h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+/* Projects Container */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+/* Each Project Card */
+.project-card {
+    background: #fdf0f5; /* soft pastel background */
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    max-width: 300px;
+    border-left: 5px solid #ff7f50; /* accent border */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Project Titles */
+.project-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #ff4d6d; /* soft accent color */
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 50px;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Page */
+.contact-page {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contact-page h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem); /* adaptive typography */
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.contact-page .contact-intro {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #333;
+    margin-bottom: 35px;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    text-align: left;
+    color: #000;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 5px rgba(255,127,80,0.3);
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #ff5722;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    margin-top: 50px;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 0 15px;
+    }
+    .contact-form button {
+        width: 100%;
+    }
+}
